@@ -1,0 +1,63 @@
+// out: ../style.css, compress: true, autoprefixer: true
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: Formular;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+hr {
+    border: none;
+    color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 2px;
+    margin: 15px 0;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    padding: 45px 0;
+}
+
+.container {
+    max-width: 1025px;
+    margin: 0 auto;
+}
+
+//variables
+@import "_vars.less";
+
+//header
+@import "_header.less";
+
+//index page
+@import "_index.less";
+
+//footer
+@import "_footer.less";
+
+//media
+@import "_media.less";

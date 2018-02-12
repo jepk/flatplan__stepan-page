@@ -1,0 +1,47 @@
+// out: null
+.transition (@what) {
+    -webkit-transition: @what .3s;
+    -moz-transition: @what .3s;
+    -o-transition: @what .3s;
+    transition: @what .3s;
+}
+
+.clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.grid-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url("/media/grid.png");
+    background-size: 1507px;   
+    background-position: center top;
+}
+
+.mark {
+    margin: 45px 0 0 0;
+    img {
+        cursor: pointer;
+        height: 19px;
+        width: 19px;
+    }
+}
+
+.gold {
+    color: #a87f53;
+}
+
+@font-face {
+    font-family: Formular;
+    src: url("/media/formular-regular.otf");
+}
+
+h1 {
+    font-size: 44px;
+    line-height: 50px;
+    font-weight: normal;
+}
