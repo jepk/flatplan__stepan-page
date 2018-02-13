@@ -1,47 +1,48 @@
 // out: null
 .stepan-page {
-    width: 1025px;
+    max-width: 1025px;
     padding: 45px;
     background-color: #fff;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     .main-photo {
         width: 100%;
     }
-    .person-about {
-        margin-top: 45px;
-    }
-    h2 {
-        font-weight: normal;
-        margin-bottom: 30px;
-        font-size: 24px;
-    }
+    .stepan-page__text {
+        .person-about {
+            margin-top: 45px;
+        }
+        h2 {
+            font-weight: normal;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
 
-    .item {
-        margin-bottom: 35px;
-        a {
-            color: #000;
-            display: block;
-            &.more {
-                color: #9f9f9f;
-                &:before {
-                    content: "";
-                    display: inline-block;
-                    background-image: url("/media/arrow.svg");
-                    width: 12px;
-                    height: 12px;
-                    margin-right: 5px;
+        .item {
+            margin-bottom: 35px;
+            a {
+                color: #000;
+                display: block;
+                &.item__more {
+                    color: #9f9f9f;
+                    &:before {
+                        content: "";
+                        display: inline-block;
+                        background-image: url("/media/arrow.svg");
+                        width: 12px;
+                        height: 12px;
+                        margin-right: 5px;
+                    }
                 }
             }
-        }
-        .list {
-            a {
-                display: inline-block;
-                margin-right: 15px;
+            .list {
+                a {
+                    display: inline-block;
+                    margin-right: 15px;
+                }
+            }
+            & + .item {
+                margin-top: 30px;
             }
         }
-        & + .item {
-            margin-top: 30px;
-        }
     }
-
 }
